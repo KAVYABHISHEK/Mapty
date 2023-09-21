@@ -312,4 +312,9 @@ class App {
     }
 
     const app = new App();
-
+      
+    resetButton.addEventListener("click", function(){
+        //console.log('yes');
+        localStorage.clear('workouts');
+        location.reload();
+    })
